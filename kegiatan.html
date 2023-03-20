@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Dion Dharmawan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+        <h1 class="title">
+            Dion Dharmawan
+        </h1>
+
+        <div class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pendidikan.html">PENDIDIKAN</a></li>
+            <li><a href="jadwal_pelajaran.html">JADWAL PELAJARAN</a></li>
+            <li class="active"><a href="kegiatan.html">KEGIATAN</a></li>
+        </div>
+
+        <div class="ontime"><strong><center>Dibuat 23 Febuary 2023</center></strong></div>
+
+        <div class="banner">
+            <img src="banner.png" alt="">
+        </div>
+
+        <div class="par">
+            <h2>KEGIATAN</h2>
+        </div>
+
+        <div class="kiri">
+            <ul>
+                <H3>PALANG MERAH REMAJA SMK NEGERI 1 KLATEN</H3>
+                <img src="img3.JPG" alt="">
+            </ul>
+            <ul>
+                <h3>MUDA MUDI DUKUH BEKELAN DESA KARANGNONGKO</h3>
+                <img src="mudamudi.jpg" alt="">
+            </ul>
+            <ul>
+                <h3>WEB CODING</h3>
+                <img src="coding.png" alt="">
+            </ul>
+            <ul>
+                <h3>NETWORKING</h3>
+                <img src="networking.png" alt="">
+            </ul>
+
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <h3><center>Dion Dharmawan</center></h3>
+                <p class="time">Waktu Akses: <span id="tanggalwaktu"></span>(Jquery)</p>
+                <ul class="sosmed">
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            var tw = new Date();
+            if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+            else (a=tw.getTime());
+            tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+            document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+</body>
+</html>

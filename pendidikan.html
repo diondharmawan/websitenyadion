@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Dion Dharmawan</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="stlye.css">
+</head>
+<body>
+        <h1 class="title">
+            Dion Dharmawan
+        </h1>
+
+        <div class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="pendidikan.html">PENDIDIKAN</a></li>
+            <li><a href="jadwal_pelajaran.html">JADWAL PELAJARAN</a></li>
+            <li><a href="kegiatan.html">KEGIATAN</a></li>
+        </div>
+
+        <div class="ontime"><strong><center>Dibuat 23 Febuary 2023</center></strong></div>
+
+        <div class="banner">
+            <img src="banner.png" alt="">
+        </div>
+
+        <div class="par">
+            <h1 class="riw"><strong>RIWAYAT PENDIDIKAN</strong></h1>
+            <div class="tk">
+                    <h2><strong>TK MARIA ASSUMTA KLATEN</strong></h2>
+                    <img src="tk.jpg" alt="">
+                    <p>Memulai pembelajaran pertama kali di TK Maria Assumpta yang terletak di Pandanrejo, Kabupaten, Kec. Klaten Tengah, Kabupaten Klaten, Jawa Tengah</p>
+            </div>
+            <div class="sd">
+                <h2><strong>SD KANISIUS SIDOWAYAH 02 KLATEN</strong></h2>
+                <img src="sd.png" alt="">
+                <p>Melanjutkan pembelajaran di SD Kanisius Sidowayah 02 Klaten yang terletak di Jl. Andalas No.26, Sidowayah, Semangkak, Kec. Klaten Tengah, Kabupaten Klaten, Jawa Tengah</p>
+            </div>
+            <div class="smp">
+                <h2><strong>SMP PANGUDI LUHUR 1 KLATEN</strong></h2>
+                <img src="smp.jpg" alt="">
+                <p>Melanjutkan pendidikan di SMP Pangudi Luhur 1 Klaten yang berlokasi di Jl. Wahidin Sudiro Husodo No.28, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah</p>
+            </div>
+            <div class="smk">
+                <h2><strong>SMK NEGERI 1 KLATEN</strong></h2>
+                <img src="smk.jpg" alt="">
+                <p>Hingga web ini dibuat(23 Febuari 2023). Saya saat ini bersekolah di SMK Negeri 1 Klaten yang berlokasi di Jl. Wahidin Sudiro Husodo No.22, Bramen, Sekarsuli, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah</p>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <h3><center>Dion Dharmawan</center></h3>
+                <p class="time">Waktu Akses: <span id="tanggalwaktu"></span>(Jquery)</p>
+                <ul class="sosmed">
+                    
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            var tw = new Date();
+            if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+            else (a=tw.getTime());
+            tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+            document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+</body>
+</html>

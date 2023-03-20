@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+body {
+    font-family: poppins;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.title {
+    font-size: 32px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.navbar li a {
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+.navbar li:hover {
+    background-color: #4c9e9e;
+    
+}
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+.ontime {
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+
+.ontime:hover {
+    color: black;
+}
+
+.par {
+    padding-left: 20px;
+    padding: 50px;
+}
+
+.par img {
+    height: 360px;
+}
+.jadwal table {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.jadwal h1 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.banner {
+    display: flex;
+    height: 360px;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.banner:hover {
+    color: aqua;
+}
+.time {
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+}
+.tk {
+   padding: 20px; 
+   display: block;
+}
+
+.active {
+    background-color: #4c9e9e;
+}
+
+.tk h2 img p {
+    justify-content: center;
+    display: flex;
+}
+
+.sd {
+    padding: 20px;
+    display: block;
+}
+
+.smp {
+    padding: 20px;
+    display: block;
+}
+
+.smk {
+    padding: 20px;
+}
+
+.kiri {
+    padding-left: 40px;
+    
+}
+
+.kiri img{
+    height: 360px;
+}
+
+.kiri ul {
+    padding: 15px;
+}
+
+footer {
+    background-color: teal;
+}
+
+footer h3 {
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+table td {
+    padding: 5px;
+}

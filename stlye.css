@@ -14,6 +14,15 @@
     animation-duration: 1.5s;
 }
 
+.image_galeri img {
+    width: 550px;
+    padding: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @-webkit-keyframes fade {
     from {
         opacity: .4;
